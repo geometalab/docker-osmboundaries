@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+/root/wait-for-it.sh database:5432
+
 COASTLINES=/data/osmboundaries/coastlines.shp
 WATER=/data/osmboundaries/water_polygons.shp
 LAND=/data/osmboundaries/land_polygons.shp
