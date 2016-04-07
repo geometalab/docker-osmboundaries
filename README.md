@@ -17,7 +17,7 @@ The imported data is available in the three tables
 Currently the import is a one-time command, so that a docker-compsose up
 should be sufficent to have the database filled and running.
 
-If a docker-compsose up is run twice, the `old` data in the database
+If a docker-compsose up is run twice, the _old_ data in the database
 is being overridden.
 
 ### Up
