@@ -22,11 +22,15 @@ is being overridden.
 
 ### Up
 
-`docker-compsose up`
+```bash
+docker-compsose up
+```
 
 ### Down
 
-`docker-compsose down`
+```bash
+docker-compsose down
+```
 
 ## development
 
