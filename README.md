@@ -36,7 +36,8 @@ docker-compsose down
 
 ### Update shapefiles
 
-Run `./update_shapes.sh` to get the newest shapefiles.
+Run `./update_shapes.sh` to get the newest shapefiles (download them),
+since they are not included in the sources.
 
 ### Trying the new build
 
@@ -50,4 +51,4 @@ docker-compose file to connect and look at the data.
 
 ### Build and push the new shapes
 
-Run `./build_and_push.sh` to get build and push the latest image.
+Run `./build_and_push.sh` to build and push the latest image to dockerhub.
