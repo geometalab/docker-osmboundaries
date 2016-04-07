@@ -6,10 +6,9 @@ RUN apt-get update && apt-get install -y \
   wget \
   unzip
 
-WORKDIR /root/
+ENV POSTGRES_PORT 5432
 
-RUN echo 'database:5432:osmboundaries:osmboundaries:osmboundaries' > /root/.pgpass
-RUN chmod 0600 /root/.pgpass
+WORKDIR /root/
 
 ADD ./data /data/osmboundaries
 

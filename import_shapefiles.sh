@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-/root/wait-for-it.sh database:5432
+/root/wait-for-it.sh ${POSTGRES_HOST}:${POSTGRES_PORT}
 
 COASTLINES=/data/osmboundaries/coastlines.shp
 WATER=/data/osmboundaries/water_polygons.shp
