@@ -12,7 +12,7 @@ container through an attached network. How this is done can
 be read at the docker-compsose user documentation.
 
 The imported data is available in the three tables
-`coastlines`, 'land_polygons'  and `water_polygons`.
+`coastlines`, `land_polygons`  and `water_polygons`.
 
 Currently the import is a one-time command, so that a docker-compsose up
 should be sufficent to have the database filled and running.
