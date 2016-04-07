@@ -36,8 +36,8 @@ docker-compsose down
 
 ### Update shapefiles
 
-Run `./update_shapes.sh` to download the newest shapefiles,
-since they are not included in the sources.
+Since the shapefiles are not included in the sources,
+run `./update_shapes.sh` to download their latest version.
 
 ### Trying the new build
 
