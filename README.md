@@ -3,7 +3,7 @@ provides a database with the worldly polygons of water, land and coastlines from
 
 ## usage
 
-Assuming you have docker and docker-compose installed and setup, just run
+Assuming you have docker and docker-compose installed and set up, just run
 the service.
 
 When the import is done (on a machine with 8GB RAM and some SSD,
