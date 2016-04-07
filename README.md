@@ -39,15 +39,16 @@ docker-compsose down
 Since the shapefiles are not included in the sources,
 run `./update_shapes.sh` to download their latest version.
 
-### Trying the new build
+### Build container from shapefiles in `data/` and test it
 
 Run `docker-compose -f docker-compose.yml -f dev.yml build`
-to build the new images.
+to build the new images using the shapefiles [just obtained](#obtain-or-update-shapefiles).
 
-Then run `docker-compose -f docker-compose.yml -f dev.yml up`
-and see if everything works. Then use a psql-client with the
-port `5442`, localhost and the username/password you used in the
-docker-compose file to connect and look at the data.
+Run `docker-compose -f docker-compose.yml -f dev.yml up`.
+If that doesn't cause any error messages,
+use a psql-client to connect to `localhost` on port `5442`
+with the username and password you used in the docker-compose file
+and look at the data.
 
 ### Build and push the new shapes
 
