@@ -1,5 +1,5 @@
 #!/bin/sh
-(mkdir -p data/
+mkdir -p data/
 cd data/
 wget -O coastlines.zip http://data.openstreetmapdata.com/coastlines-split-4326.zip
 wget -O land.zip http://data.openstreetmapdata.com/land-polygons-complete-4326.zip
@@ -15,4 +15,3 @@ mv coastlines-split-4326/lines.shx coastlines.shx
 mv land-polygons-complete-4326/land_polygons.* .
 mv water-polygons-split-4326/water_polygons.* .
 rm -rf coastlines-split-4326/ land-polygons-complete-4326/ water-polygons-split-4326
-)
