@@ -14,8 +14,6 @@ ogr2ogr_command(){
     -overwrite "$1"
 }
 
-# ogr2ogr_command=ogr2ogr -f "PostgreSQL" PG:"host=${POSTGRES_HOST} user=${POSTGRES_USER} dbname=${POSTGRES_DB} password=${POSTGRES_PASSWORD}"
-
 echo "importing coastlines"
 ogr2ogr_command ${COASTLINES}
 echo "coastlines imported"
