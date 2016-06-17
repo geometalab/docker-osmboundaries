@@ -1,9 +1,9 @@
 version: '2'
 services:
   database:
-    command: postgres -B 1GB -F -N 512 -S 1GB
+#    command: postgres -B 1GB -F -N 512 -S 1GB
     ports:
-      - "5442:5432"
+      - "5555:5432"
   osmboundaries_importer:
     build:
       context: .

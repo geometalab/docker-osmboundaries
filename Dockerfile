@@ -1,4 +1,4 @@
-FROM geodata/gdal
+FROM geometalab/gdal-docker:2.2.0dev
 
 USER root
 

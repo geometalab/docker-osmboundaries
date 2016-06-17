@@ -2,7 +2,7 @@ version: '2'
 services:
   database:
     # to limit scaling to exactly 1, we need to specify the container name
-    container_name: osmboundaries_postgis
+    container_name: osmboundaries_postgis_120
     image: geometalab/postgis:9.5
     volumes:
       - osmboundaries-postgis-data:/var/lib/postgresql
@@ -20,7 +20,7 @@ services:
         max-size: 50k
   osmboundaries_importer:
     # to limit scaling to exactly 1, we need to specify the container name
-    container_name: osmboundaries_importer
+    container_name: osmboundaries_importer_120
     image: geometalab/osmboundaries:latest
     depends_on:
       - database
