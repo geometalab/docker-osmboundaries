@@ -1,9 +1,9 @@
-version: '2'
+version: '3.3'
 services:
   database:
     # to limit scaling to exactly 1, we need to specify the container name
     container_name: osmboundaries_postgis
-    image: geometalab/postgis:9.5
+    image: mdillon/postgis:10
     volumes:
       - osmboundaries-postgis-data:/var/lib/postgresql
     command: postgres -B 2GB -F -N 512 -S 2GB
